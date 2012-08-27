@@ -108,7 +108,6 @@ $.fn.listBuilder = function(options){
 				var activeCount = $container.find('li a').not('.locked').last().addClass('active').size();
 				if(activeCount > 0) $inputField.blur();
 			}
-			return inInput; //if it is in the input bubble up
 		}
 		else if(ev.keyCode == Keys.ENTER && inInput && opts.onlyAddFromSource == false){
 			var txt = $inputField.val();
