@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>jQuery Big Dialog</title>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.22/themes/base/jquery-ui.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="jquery.listBuilder.css" type="text/css" media="all" />
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.22/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="jquery.listBuilder.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#to').listBuilder({
+				items: [{label:"Santa",locked:true}, {label:"Dasher", value:"deer1"},],
+				maxItems: 4,
+				onMaxReached: function(){
+					alert('Sorry this message can only be sent to 4 people!')
+				},
+				autocompleteOptions: { //see: http://jqueryui.com/demos/autocomplete/#options for more info
+					source: [
+						{label:"Dasher", value:"deer1"},
+						{label:"Dancer", value:"deer2"},
+						{label:"Prancer", value:"deer3"},
+						{label:"Vixen", value:"deer4"},
+						{label:"Comet", value:"deer5"},
+						{label:"Cupid", value:"deer6"},
+						{label:"Donner", value:"deer7"},
+						{label:"Blitzen", value:"deer8"},
+						{label:"Rudolph", value:"deer9"},
+						{label:"Elf", value:"elf"}
+					]
+				}
+			});
+			$('#to').click();
+
+			$('form button').button();
+			$('form').submit(function(){
+				var data = $(this).serialize();
+				alert(data);
+			})
+		});
+	</script>
+	<style type="text/css">
+		body{ font-family: Arial, Verdana, sans-serif; color:#555; }
+		fieldset{width:600px; background-color: #f5f5f5; border: 1px solid #ccc; margin:0 auto;}
+		fieldset div{margin: 5px 0; clear: both;}
+		fieldset div.listBuilder{clear:none;margin-left:100px;}
+		fieldset label{float: left;width:100px;}
+		fieldset input, fieldset textarea{border: 1px solid #ccc;font-size: 1em;font-family: Arial, Verdana, sans-serif;padding: 0.2em 0.3em;width: 487px;}
+		fieldset div.listBuilder input{width:200px;}
+		#message{height:200px;width: 587px;}
+	</style>
+</head>
+<body>
+	<h1>jQuery List Builder Demo</h1>
+	<p>
+		In this example "Santa" is locked in the <em>To</em> field, but all other persons entered in the <em>To</em> field will be addable/removable. The <code>maxItems</code> has been set to <code>4</code>. To see the plug-in in action, try adding one of 
+		<a href="#" onclick="window.open('http://en.wikipedia.org/wiki/Santa_Claus%27s_reindeer')" title="Dasher, Dancer, Prancer, Vixen, Comet, Cupid, Donner, Blitzen, Rudolph">Santa's reindeer</a>.
+	</p>
+	<br />
+	<form action="javascript:void(0)">
+		<fieldset>
+			<div>
+				<label for="to">To:</label>
+				<input type="text" id="to" name="to" value="" />
+			</div> 
+			<div>
+				<label for="subject">Subject:</label>
+				<input type="text" id="subject" name="subject" value="I've been good!" />
+			</div>
+			<div>
+				<label for="message">Message:</label>
+				<textarea id="message" name="message">Dear Santa and Reindeer, 
+
+Please don't forget me this year and watch out for the snow storms!
+
+Thanks!
+				</textarea>
+			</div>
+			<div style="text-align: right">
+				<button type="reset">Cancel</button>
+				<button type="submit">Send</button>
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>
