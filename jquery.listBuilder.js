@@ -27,7 +27,7 @@ $.fn.listBuilder = function(options){
 		beforeAddItem: null,
 		items: [],
 		onAddItem: null,
-		onRemoveItem: null,
+		beforeRemoveItem: null,
 		onMaxReached: null,
 		showRemoveIcon: true,
 		autocompleteOptions: {
@@ -209,10 +209,10 @@ $.fn.listBuilder = function(options){
 		
 	}
 	function _removeListItem(item){
-		if(typeof opts.onRemoveItem == "function"){
+		if(typeof opts.beforeRemoveItem == "function"){
 			var toRemove = $(item).find('input').data('itemData');
 			// item.hide();
-			opts.onRemoveItem(toRemove, function(result){
+			opts.beforeRemoveItem(toRemove, function(result){
 				if(result == true) _completeRemove(item);
 				// else item.show();
 			});
