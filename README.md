@@ -3,17 +3,21 @@ jQuery List Builder
 By: Spencer Neese   
 Version: 1.0   
 Requires: jQuery UI 1.7+ and jQuery 1.3.2+   
-Demo: [http://jsfiddle.net/th3uiguy/MRu67/](http://jsfiddle.net/th3uiguy/MRu67/)
+Demo: [http://jsfiddle.net/th3uiguy/MRu67/](http://jsfiddle.net/th3uiguy/MRu67/embedded/result/)
+Git: [https://github.com/th3uiguy/jquery-listbuilder.git](https://github.com/th3uiguy/jquery-listbuilder.git)   
 
 
-## Description ##
 
+Description
+---------------------
 jQuery List Builder uses the jQuery UI [autocomplete](http://jqueryui.com/demos/autocomplete/) to convert a basic input into an email client like "To" field with autocompletion.
 
 
 
 
-## Options ##
+
+Options
+---------------------
 #### showRemoveIcon ###
 (Boolean) Flag to show the 'X' icon on each list item.
 
@@ -28,7 +32,7 @@ jQuery List Builder uses the jQuery UI [autocomplete](http://jqueryui.com/demos/
 *	When `value` is not specified the `label` attribute is used instead. 
 *	The `locked` attribute will prevent a user from removing that element from the list and makes the list item appear like normal text in the field.
 
-```
+```js
 	items: [
 		{"label": "Apples"},
 		{"label": "Pears", "value": 233},
@@ -83,7 +87,8 @@ See [http://jqueryui.com/demos/autocomplete/#options](http://jqueryui.com/demos/
 
 
 	
-## Methods ##
+Methods
+---------------------
 ### Add ###
 Add an item to the list. Pass the new item as an object with `label`, `value` and `locked`.
   
@@ -97,8 +102,8 @@ Get the current number of items in the list
 
 
 
-
+<br /><br />
 Copyright 2012, Spencer Neese   
-Dual licensed under the MIT or GPL Version 2 licenses.   
-https://raw.github.com/th3uiguy/jquery-listbuilder/master/GPL-LICENSE.txt   
-https://raw.github.com/th3uiguy/jquery-listbuilder/master/MIT-LICENSE.txt
+Dual licensed under the 
+[MIT](https://raw.github.com/th3uiguy/jquery-listbuilder/master/MIT-LICENSE.txt) or 
+[GPL](https://raw.github.com/th3uiguy/jquery-listbuilder/master/GPL-LICENSE.txt) Version 2 licenses. 
