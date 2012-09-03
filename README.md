@@ -103,7 +103,7 @@ Get the current number of items in the list
 
 
 <br /><br />
-Copyright 2012, Spencer Neese   
+Copyright (c) 2012, Spencer Neese [https://github.com/th3uiguy/](https://github.com/th3uiguy/)   
 Dual licensed under the 
 [MIT](https://raw.github.com/th3uiguy/jquery-listbuilder/master/MIT-LICENSE.txt) or 
 [GPL](https://raw.github.com/th3uiguy/jquery-listbuilder/master/GPL-LICENSE.txt) Version 2 licenses. 

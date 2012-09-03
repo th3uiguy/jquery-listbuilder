@@ -1,3 +1,18 @@
+/**
+* List Builder
+*
+* @fileoverview 
+* @link https://github.com/th3uiguy/jquery-listbuilder
+* @author Spencer Neese
+* @version 1.0
+* @requires jQuery UI 1.7+ and jQuery 1.3.2+
+* @license jQuery List Builder Plugin v1.0
+*
+* Copyright 2011, Spencer Neese
+* Dual licensed under the MIT or GPL Version 2 licenses.
+* <https://raw.github.com/th3uiguy/jquery-listbuilder/master/GPL-LICENSE.txt> <https://raw.github.com/th3uiguy/jquery-listbuilder/master/MIT-LICENSE.txt>
+*/
+
 .listBuilder{
 	border: 1px solid #ccc;
 	background-color: #fff;

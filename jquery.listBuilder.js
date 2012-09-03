@@ -1,15 +1,17 @@
 /**
-* ListBuilder
+* List Builder
 *
-* @fileoverview Dialog scales to fit the full size of the screen with widow resize handling built in
+* @fileoverview jQuery List Builder uses the jQuery UI autocomplete to convert a basic input into an email 
+* client like "To" field with autocompletion.
 * @link https://github.com/th3uiguy/jquery-listbuilder
 * @author Spencer Neese
 * @version 1.0
 * @requires jQuery UI 1.7+ and jQuery 1.3.2+
+* @license jQuery List Builder Plugin v1.0
 *
 * Copyright 2012, Spencer Neese
 * Dual licensed under the MIT or GPL Version 2 licenses.
-* <https://github.com/th3uiguy/jquery-listbuilder/master/GPL-LICENSE.txt https://github.com/th3uiguy/jquery-listbuilder/master/MIT-LICENSE.txt>
+* <https://raw.github.com/th3uiguy/jquery-listbuilder/master/GPL-LICENSE.txt> <https://raw.github.com/th3uiguy/jquery-listbuilder/master/MIT-LICENSE.txt>
 */
 ;(function( $ ){
 	
